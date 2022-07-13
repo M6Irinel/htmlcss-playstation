@@ -93,8 +93,17 @@ main #games sup {
     color: #6188e3;
 }
 
-#PS-Plus .col .img {
+#PS-Plus .col .img,
+#PS-New .col .img {
     width: 75%;
+}
+
+/* #endregion PS-Plus */
+
+/* #region PS-New */
+
+#PS-New {
+    background-color: #161c3b;
 }
 
 /* #endregion PS-Plus */
