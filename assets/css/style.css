@@ -1,6 +1,14 @@
 
 
 
+/* #region root */
+
+:root {
+    --padding-horizontal-page-web-xs: 12px;
+}
+
+/* #endregion root */
+
 
 /* #region header */
 
@@ -13,3 +21,34 @@
 }
 
 /* #endregion header */
+
+/* #region main section #hero */
+/* #region TOP */
+main #hero .top {
+    background-image: url(../img/jumbo-bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+}
+
+main #hero .container button {
+    background-color: #cd3d0f;
+}
+
+/* #endregion TOP */
+
+/* #region BOTTOM */
+
+main #hero .bottom .col img {
+    border-radius: 20px;
+}
+
+main #hero .bottom .col .active {
+    border: 2px solid #71b0e3;
+    padding: 2px;
+}
+
+/* #endregion BOTTOM */
+
+/* #endregion main section #hero */
