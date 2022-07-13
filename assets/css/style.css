@@ -70,3 +70,23 @@ main #games sup {
 }
 
 /* #endregion games */
+
+/* #region PS-Plus */
+
+#PS-Plus {
+    background-color: #bebcbb;
+}
+
+#PS-Plus button {
+    color: #6188e3;
+}
+
+#PS-Plus .col .img {
+    width: 75%;
+}
+
+/* #endregion PS-Plus */
+
+
+
+
