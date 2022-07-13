@@ -9,7 +9,6 @@
 
 /* #endregion root */
 
-
 /* #region header */
 
 #logo {
@@ -23,24 +22,26 @@
 /* #endregion header */
 
 /* #region main section #hero */
-/* #region TOP */
-main #hero .top {
+
+main #hero .section-bg {
     background-image: url(../img/jumbo-bg.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-top: 200px;
 }
 
-main #hero .container button {
+main #hero .section-bg,
+main #games .section-bg {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main #hero .container button,
+main #games .container button {
     background-color: #cd3d0f;
 }
 
-/* #endregion TOP */
-
-/* #region BOTTOM */
-
-main #hero .bottom .col img {
+main #hero .bottom .col img,
+main #games .bottom .col img {
     border-radius: 20px;
 }
 
@@ -48,7 +49,25 @@ main #hero .bottom .col .active {
     border: 2px solid #71b0e3;
     padding: 2px;
 }
-
-/* #endregion BOTTOM */
-
 /* #endregion main section #hero */
+
+/* #region PS5 */
+
+#PS5 .active {
+    border-bottom: 2px solid #2586d5;
+}
+
+/* #endregion PS5 */
+
+/* #region games */
+
+main #games .section-bg {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    padding-top: 50px;
+}
+
+main #games sup {
+    font-size: 0.7rem;
+}
+
+/* #endregion games */
