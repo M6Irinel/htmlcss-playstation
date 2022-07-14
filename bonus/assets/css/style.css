@@ -1,5 +1,8 @@
 
 
+
+/* #region menu dropdown */
+
 .d-menu {
     height: 0;
     padding: 0;
@@ -13,9 +16,18 @@
     transition: height 0.3s ease-in-out;
 }
 
-.d-menu.show {
-    height: 170px;
+.small .d-menu.show {
+    height: 140px;
 }
+
+.medium .d-menu.show {
+    height: 180px;
+}
+
+.large .d-menu.show {
+    height: 200px;
+}
+
 
 .wid {
     width: 70px;
@@ -24,6 +36,7 @@
 .d-menu .top {
     width: 80%;
     margin: 0 auto;
+    margin-bottom: auto;
 }
 
 .d-menu .at {
@@ -31,6 +44,8 @@
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
+    flex-basis: 200px;
+    text-align: center;
 }
 
 .d-menu .at:hover {
@@ -41,6 +56,7 @@
 .d-menu .bottom {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 5px;
 }
 
 .d-menu .ab {
@@ -49,13 +65,22 @@
 
 .d-menu .ab:hover {
     background-color: transparent;
-    color: #00439c;
+    color: #006eff;
 }
 
 .d-menu .ab span {
-    color: #00439c;
+    color: #006eff;
     margin-right: 5px;
+    background-color: #006eff;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-bottom: 2px;;
+    vertical-align: middle;
+    border-radius: 50%;
 }
+
+/* #endregion menu dropdown */
 
 /* #region ALL */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
