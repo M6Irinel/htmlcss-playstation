@@ -68,6 +68,24 @@ header {
     right: 0;
     transition: height 0.3s ease-in-out;
 }
+.wid {
+    width: 70px;
+}
+
+.d-menu .top {
+    margin: 0 auto;
+    margin-bottom: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.d-menu .top a:first-child {
+    margin-left: auto;
+}
+
+.d-menu .top a:last-child {
+    margin-right: auto;
+}
 
 .smaller .d-menu.show {
     height: 140px;
@@ -78,27 +96,53 @@ header {
 }
 
 .large .d-menu.show {
-    height: 200px;
-}
-
-
-.wid {
-    width: 70px;
-}
-
-.d-menu .top {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: auto;
-}
-
-.d-menu .top.right {
-    padding-left: 100px;
+    height: 210px;
 }
 
 @media screen and (min-width: 992px) {
-    .d-menu .top.right {
-        padding-left: 0;
+    .d-menu .top {
+        width: 922px !important;
+    }
+
+    .d-menu .bottom {
+        width: 922px !important;
+    }
+
+    
+
+.d-menu .top.right::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.d-menu .top.right::-webkit-scrollbar-track {
+    -webkit-appearance: none;
+}
+
+.d-menu .top.right::-webkit-scrollbar-thumb {
+    -webkit-appearance: none;
+    background-color: gray;
+    border-radius: 10px;
+    border: 4px solid #fff;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .d-menu .top {
+        width: 1200px !important;
+    }
+
+    .d-menu .bottom {
+        width: 1200px !important;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .d-menu .top {
+        width: 1400px !important;
+    }
+
+    .d-menu .bottom {
+        width: 1400px !important;
     }
 }
 
@@ -107,8 +151,9 @@ header {
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
+    width: 200px !important;
     flex-basis: 200px;
-    text-align: center;
+    flex-grow: 0;
 }
 
 .d-menu .at:hover {
@@ -117,9 +162,9 @@ header {
 }
 
 .d-menu .bottom {
-    width: 80%;
     margin: 0 auto;
     padding-bottom: 5px;
+    overflow-x: auto;
 }
 
 .d-menu .ab {
