@@ -41,6 +41,18 @@ header {
     z-index: 1000;
 }
 
+.dropdown-toggle::after {
+    vertical-align: middle;
+    border: none;
+    font: var(--fa-font-solid);
+    content: "\f106";
+    transition: transform 0.1s;
+}
+
+.dropdown-toggle.show::after {
+    transform: rotate(180deg);
+}
+
 /* #endregion header */
 
 /* #region #hero */

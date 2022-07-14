@@ -1,6 +1,59 @@
 
 
 
+/* #region ALL */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+/* #endregion ALL */
+
+/* #region root */
+
+:root {
+    --padding-horizontal-page-web-xs: 12px;
+}
+
+/* #endregion root */
+
+/* #region header */
+
+body header nav .nav-link:hover {
+    color: #0d82fd !important;
+}
+
+#logo {
+    height: 8px;
+}
+
+#lens {
+    height: 1.5rem;
+}
+
+header {
+    display: contents;
+}
+
+#nav-fix {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.dropdown-toggle::after {
+    vertical-align: middle;
+    border: none;
+    font: var(--fa-font-solid);
+    content: "\f106";
+    transition: transform 0.1s;
+}
+
+.dropdown-toggle.show::after {
+    transform: rotate(180deg);
+}
+
 /* #region menu dropdown */
 
 .d-menu {
@@ -16,7 +69,7 @@
     transition: height 0.3s ease-in-out;
 }
 
-.small .d-menu.show {
+.smaller .d-menu.show {
     height: 140px;
 }
 
@@ -37,6 +90,16 @@
     width: 80%;
     margin: 0 auto;
     margin-bottom: auto;
+}
+
+.d-menu .top.right {
+    padding-left: 100px;
+}
+
+@media screen and (min-width: 992px) {
+    .d-menu .top.right {
+        padding-left: 0;
+    }
 }
 
 .d-menu .at {
@@ -81,47 +144,6 @@
 }
 
 /* #endregion menu dropdown */
-
-/* #region ALL */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-* {
-    font-family: 'Inter', sans-serif;
-}
-/* #endregion ALL */
-
-/* #region root */
-
-:root {
-    --padding-horizontal-page-web-xs: 12px;
-}
-
-/* #endregion root */
-
-/* #region header */
-
-body header nav .nav-link:hover {
-    color: #0d82fd !important;
-}
-
-#logo {
-    height: 8px;
-}
-
-#lens {
-    height: 1.5rem;
-}
-
-header {
-    display: contents;
-}
-
-#nav-fix {
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-    z-index: 1000;
-}
 
 /* #endregion header */
 
