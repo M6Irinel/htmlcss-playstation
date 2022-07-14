@@ -247,8 +247,8 @@ main #hero button {
 
 /* #region PS5 */
 
-#PS5 .active {
-    border-bottom: 2px solid #2586d5;
+#PS5 input[type="radio"]{
+    display: none;
 }
 
 #PS5 .azure {
@@ -276,9 +276,136 @@ main #PS5 .container.bottom .col:hover {
     filter: opacity(1);
 }
 
-main #PS5 .container.bottom .col.active {
+/* #region images ps5 */
+
+.images-ps5 .imag {
+    height: 636px;
+}
+
+.images-ps5 img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* ps5 */
+.images-ps5 .ps5 {
+    filter: opacity(0);
+    transition: all 0.5s;
+}
+
+#ps5:checked ~ .images-ps5 .ps5 {
     filter: opacity(1);
 }
+
+#ps5:not(:checked) ~ .images-ps5 .ps5 {
+    filter: opacity(0);
+}
+
+.a-button label[for="ps5"] {
+    border-bottom: 3px solid #fff;
+}
+
+#ps5:checked ~ .a-button label[for="ps5"] {
+    border-bottom: 3px solid #2586d5;
+    filter: opacity(1);
+}
+
+/* joypad */
+.images-ps5 .joypad {
+    filter: opacity(0);
+    transition: all 0.5s;
+}
+
+#joypad:checked ~ .images-ps5 .joypad {
+    filter: opacity(1);
+}
+
+#joypad:not(:checked) ~ .images-ps5 .joypad {
+    filter: opacity(0);
+}
+
+.a-button label[for="joypad"] {
+    border-bottom: 3px solid #fff;
+}
+
+#joypad:checked ~ .a-button label[for="joypad"] {
+    border-bottom: 3px solid #2586d5;
+    filter: opacity(1);
+}
+
+/* headset */
+.images-ps5 .headset {
+    filter: opacity(0);
+    transition: all 0.5s;
+}
+
+#headset:checked ~ .images-ps5 .headset {
+    filter: opacity(1);
+}
+
+#headset:not(:checked) ~ .images-ps5 .headset {
+    filter: opacity(0);
+}
+
+.a-button label[for="headset"] {
+    border-bottom: 3px solid #fff;
+}
+
+#headset:checked ~ .a-button label[for="headset"] {
+    border-bottom: 3px solid #2586d5;
+    filter: opacity(1);
+}
+
+/* remote */
+.images-ps5 .remote {
+    filter: opacity(0);
+    transition: all 0.5s;
+}
+
+#remote:checked ~ .images-ps5 .remote {
+    filter: opacity(1);
+}
+
+#remote:not(:checked) ~ .images-ps5 .remote {
+    filter: opacity(0);
+}
+
+.a-button label[for="remote"] {
+    border-bottom: 3px solid #fff;
+}
+
+#remote:checked ~ .a-button label[for="remote"] {
+    border-bottom: 3px solid #2586d5;
+    filter: opacity(1);
+}
+
+/* camera */
+.images-ps5 .camera {
+    filter: opacity(0);
+    transition: all 0.5s;
+}
+
+#camera:checked ~ .images-ps5 .camera {
+    filter: opacity(1);
+}
+
+#camera:not(:checked) ~ .images-ps5 .camera {
+    filter: opacity(0);
+}
+
+.a-button label[for="camera"] {
+    border-bottom: 3px solid #fff;
+}
+
+#camera:checked ~ .a-button label[for="camera"] {
+    border-bottom: 3px solid #2586d5;
+    filter: opacity(1);
+}
+
+/* #endregion images ps5 */
 
 /* #endregion PS5 */
 
