@@ -1,0 +1,412 @@
+
+
+.d-menu {
+    height: 0;
+    padding: 0;
+    padding-top: 5px;
+    overflow: hidden;
+    border: none;
+    border-radius: 0;
+    top: 98% !important;
+    left: 0;
+    right: 0;
+    transition: height 0.3s ease-in-out;
+}
+
+.d-menu.show {
+    height: 170px;
+}
+
+.wid {
+    width: 70px;
+}
+
+.d-menu .top {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.d-menu .at {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.d-menu .at:hover {
+    background-color: transparent;
+    box-shadow: 0 0 5px gray;
+}
+
+.d-menu .bottom {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.d-menu .ab {
+    text-align: center;
+}
+
+.d-menu .ab:hover {
+    background-color: transparent;
+    color: #00439c;
+}
+
+.d-menu .ab span {
+    color: #00439c;
+    margin-right: 5px;
+}
+
+/* #region ALL */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+/* #endregion ALL */
+
+/* #region root */
+
+:root {
+    --padding-horizontal-page-web-xs: 12px;
+}
+
+/* #endregion root */
+
+/* #region header */
+
+body header nav .nav-link:hover {
+    color: #0d82fd !important;
+}
+
+#logo {
+    height: 8px;
+}
+
+#lens {
+    height: 1.5rem;
+}
+
+header {
+    display: contents;
+}
+
+#nav-fix {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+/* #endregion header */
+
+/* #region #hero */
+
+main #hero .section-bg {
+    background-image: url(../img/jumbo-bg.png);
+    padding-top: 200px;
+    filter: opacity(0);
+    animation: anim-background-hero 1s 0.3s forwards;
+}
+
+main #hero .section-bg,
+main #games .section-bg {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main #hero .container button,
+main #games .container button {
+    padding: 2px;
+    border: 2px solid transparent;
+}
+
+main #hero .container button:hover,
+main #games .container button:hover {
+    padding: 2px;
+    border: 2px solid #cd3d0f;
+}
+
+main #hero .container button span,
+main #games .container button span {
+    background-color: #cd3d0f;
+}
+
+main #hero .bottom .col,
+main #games .bottom .col {
+    cursor: pointer;
+}
+
+main #hero .bottom .col img {
+    border-radius: 20px;
+    filter: opacity(0.7);
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 0 0 #000;
+    transition: all 0.2s ease-in-out;
+}
+
+main #hero .bottom .col:hover img{
+    border-radius: 20px;
+    filter: opacity(1);
+    bottom: 8px;
+    box-shadow: 0 5px 5px rgb(181, 181, 181);
+}
+
+main #hero .bottom .col .active {
+    border: 2px solid #71b0e3;
+    padding: 2px;
+}
+
+/* #region animation */
+
+@keyframes anim-background-hero {
+    0%{
+        filter: opacity(0);
+    }
+    100%{
+        filter: opacity(1);
+    }
+}
+
+main #hero .icon {
+    filter: opacity(0);
+    position: relative;
+    top: 20px;
+    animation: start-anim-hero 1s 0.5s forwards;
+}
+
+main #hero h3 {
+    filter: opacity(0);
+    position: relative;
+    top: 20px;
+    animation: start-anim-hero 1s 0.6s forwards;
+}
+
+main #hero p {
+    filter: opacity(0);
+    position: relative;
+    top: 20px;
+    animation: start-anim-hero 1s 0.6s forwards;
+}
+
+main #hero button {
+    filter: opacity(0);
+    position: relative;
+    top: 20px;
+    animation: start-anim-hero 1s 0.6s forwards;
+}
+
+@keyframes start-anim-hero {
+    0%{
+        filter: opacity(0);
+        position: relative;
+        top: 20px;
+    }
+    85%{
+        filter: opacity(1);
+        position: relative;
+        top: 5;
+    }
+    100%{
+        filter: opacity(1);
+        position: relative;
+        top: 0;
+    }
+}
+
+/* #endregion animation */
+
+/* #endregion main section #hero */
+
+/* #region PS5 */
+
+#PS5 .active {
+    border-bottom: 2px solid #2586d5;
+}
+
+#PS5 .azure {
+    color: #147dd2;
+}
+
+main #PS5 .container button {
+    padding: 2px;
+    border: 2px solid transparent;
+    background-color: transparent;
+}
+
+main #PS5 .container button:hover {
+    padding: 2px;
+    border: 2px solid #0b5ed7;
+}
+
+main #PS5 .container.bottom .col {
+    cursor: pointer;
+    filter: opacity(0.6);
+    transition: all 0.2s ease-in-out;
+}
+
+main #PS5 .container.bottom .col:hover {
+    filter: opacity(1);
+}
+
+main #PS5 .container.bottom .col.active {
+    filter: opacity(1);
+}
+
+/* #endregion PS5 */
+
+/* #region games */
+
+main #games .section-bg {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    padding-top: 50px;
+}
+
+main #games sup {
+    font-size: 0.7rem;
+}
+
+main #games .bottom .col img {
+    border-radius: 20px;
+    filter: blur(0);
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+main #games .bottom .col:hover img {
+    filter: blur(0.5px);
+    transform: scale(1.01);
+}
+
+/* #endregion games */
+
+/* #region PS4 */
+
+main #PS4 .container button {
+    padding: 2px;
+    border: 2px solid transparent;
+    background-color: transparent;
+}
+
+main #PS4 .container button:hover {
+    padding: 2px;
+    border: 2px solid #0b5ed7;
+}
+
+/* #endregion PS4 */
+
+/* #region PS-Plus */
+
+#PS-Plus {
+    background-color: #bebcbb;
+}
+
+#PS-Plus .col .img,
+#PS-Now .col .img {
+    width: 75%;
+}
+
+#PS-Plus .container button {
+    padding: 2px;
+    border: 2px solid transparent;
+    background-color: transparent;
+}
+
+#PS-Plus .container button span {
+    color: #3066e6;
+}
+
+#PS-Plus .container button:hover {
+    padding: 2px;
+    border: 2px solid #f9fafb;
+}
+
+/* #endregion PS-Plus */
+
+/* #region discount */
+
+#discount .col img {
+    cursor: pointer;
+    transform: scale(1);
+    filter: blur(0);
+    transition: all 0.2s ease-in-out;
+}
+
+#discount .col img:hover {
+    transform: scale(1.02);
+    filter: blur(0.5px);
+    transition: all 0.2s ease-in-out;
+}
+
+/* #endregion discount */
+
+/* #region PS-New */
+
+#PS-Now {
+    background-color: #161c3b;
+}
+
+#PS-Now .container button {
+    padding: 2px;
+    border: 2px solid transparent;
+    background-color: transparent;
+}
+
+#PS-Now .container button:hover {
+    padding: 2px;
+    border: 2px solid #f9fafb;
+}
+
+/* #endregion PS-Plus */
+
+/* #region icons */
+
+#social .col {
+    cursor: pointer;
+    filter: blur(0);
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+#social .col:hover {
+    transform: scale(1.02);
+    filter: blur(0.5px);
+}
+
+/* #endregion social */
+
+/* #region footer */
+
+footer {
+    background-color: #00439c;
+    color: #fff;
+}
+
+footer .top .global .img {
+    width: 27px;
+}
+
+footer a {
+    display: block;
+    margin: 0.5rem 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .bottom a {
+    display: inline-block;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .bottom .img {
+    width: 120px;
+}
+
+/* #endregion footer */
+
